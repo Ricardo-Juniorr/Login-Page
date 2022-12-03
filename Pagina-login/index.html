@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Login-Content-->
+    <div class="login-content">
+        <!--Título--> 
+        <div class="title">
+            <h1>Login</h1>
+        </div>
+        <!--Usuário-Senha-->
+        <div class="text">
+            <form action="">
+                <p>Usuário</p>
+                <input id="usuario" class="input" type="text" name="usuario">
+                <p>Senha</p>
+                <input id="senha" class="input" type="password" name="senha">
+            </form>
+            <!--Botão para envio dos dados-->
+            <div class="button">
+                <input onclick="Entrar()" class="submit" type="submit" name="Login" value="Login">
+            </div>
+            <!--Esqueceu a senha-->
+            <span>
+                <a href="#">Esqueceu a Senha?</a>
+            </span>
+    </div>       
+           
+            
+     
+</body>
+</html>
+<script>
+    function Entrar(){
+    var user = document.getElementById("usuario")
+    var password = document.getElementById("senha")
+
+    alert("Seu Login é: " + user.value + " " + password.value)
+    }
+</script>
